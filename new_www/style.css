@@ -1,0 +1,48 @@
+html {
+	background: url('./images/pattern.png');
+	margin: 0;
+	padding: 0; }
+	
+header, section, footer, aside, nav, main, article, figure { 
+	display: block; 
+}
+
+.marquee {
+	margin: 0 auto;
+	height: 50px;
+	border: 1px solid #737373;
+	background: #CDCCCC;
+	line-height: 250%;
+	margin-bottom: 10px;
+	width: 802px;
+	border-radius: 3px;
+	font-size: 10pt;
+	box-shadow: inset 0px 1px 1px 0px #737373;
+}
+
+.banner {
+	margin: 0 auto;
+	background-image: url(images/banner.png);
+	background-repeat: no-repeat;
+	height: 125px;
+	width: 802px;
+}
+
+.nav {
+	margin: 0 auto;
+	min-width:802px;
+	height:60px;
+	background: #CDCCCC;
+}
+
+.content {
+	margin: 0 auto;
+	max-width:802px;
+	background: #CDCCCC;
+}
+
+.rights {
+	margin: 0 auto;
+	min-width:802px;
+	height:125px;
+}
