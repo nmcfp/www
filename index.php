@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <title>New Mexico CFP</title>
 <link rel="icon" type="image/png" href="./images/title.png" />
+<script src="./html/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
 	if ($content == "home") {include './html/home.html'; $found = 1;}
 	if ($content == "events") {include './html/events.html'; $found = 1;}
 	if ($content == "issues") {include './html/issues.html'; $found = 1;}
-	if ($content == "staff") {include './html/staff.html'; $found = 1;}
+	if ($content == "people") {include './html/people.html'; $found = 1;}
 	if ($content == "contact") {include './html/contact.html'; $found = 1;}
 	if ($content == "message") {include './html/message.html'; $found = 1;}
 	
