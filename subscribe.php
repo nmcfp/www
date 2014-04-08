@@ -1,12 +1,12 @@
 <?php
 # LIST EMAIL ADDRESS
-$recipient = "info@nmcfp.com";
+$recipient = "chris@nmcfp.com";
 
 # SUBJECT (Subscribe/Remove)
 $subject = "Subscribe";
 
 # SENDER - WE ALSO USE THE RECIPIENT AS SENDER
-$sender = $recipient;
+$sender = "info@nmcfp.com";
 
 $name = $_REQUEST['Name'];
 $email = $_REQUEST['Email'];
