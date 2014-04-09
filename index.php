@@ -26,6 +26,7 @@
 	if ($content == "people") {include './html/people.html'; $found = 1;}
 	if ($content == "contact") {include './html/contact.html'; $found = 1;}
 	if ($content == "message") {include './html/message.html'; $found = 1;}
+	if ($content == "endorsement") {include './html/endorsement.html'; $found = 1;}
 	
 	if ($found == 0) {
 		echo "<center>Error: page not found.</center>";
@@ -38,5 +39,4 @@
 <iframe class="rights" src="./html/rights.html" seamless="yes"></iframe>
 </footer>
 </body>
-
 </html>
