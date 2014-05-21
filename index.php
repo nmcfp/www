@@ -35,6 +35,7 @@
 	# misc temp
 	if ($content == "message") {include './html/message.html'; $found = 1;}
 	if ($content == "endorsement") {include './html/endorsement.html'; $found = 1;}
+	if ($content == "guide") {include './html/guide.html'; $found = 1;}
 	
 	if ($found == 0) {
 		echo "<center>Error: page not found.</center>";
