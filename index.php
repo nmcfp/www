@@ -30,6 +30,7 @@
 	
 	# events
 	if ($content == "call") {include './html/call.html'; $found = 1;}
+	if ($content == "host") {include './html/host.html'; $found = 1;}	
 	if ($content == "dream") {include './html/dream.html'; $found = 1;}
 	
 	# misc temp
