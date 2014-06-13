@@ -36,13 +36,14 @@
 	# misc temp
 	if ($content == "message") {include './html/message.html'; $found = 1;}
 	if ($content == "endorsement") {include './html/endorsement.html'; $found = 1;}
-	if ($content == "guide") {include './html/guide.html'; $found = 1;}
+	if ($content == "coming_soon") {include './html/coming_soon.html'; $found = 1;}
 	
 	if ($found == 0) {
 		echo "<center>Error: page not found.</center>";
 	}
 	
-	print "</div>";
+	print '</div>';
+	include './html/social.html';
 ?>
 
 <footer>

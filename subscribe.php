@@ -1,6 +1,6 @@
 <?php
 # LIST EMAIL ADDRESS
-$recipient = "chris@nmcfp.com";
+$recipient = "info@nmcfp.com";
 
 # SUBJECT (Subscribe/Remove)
 $subject = "Subscribe";
