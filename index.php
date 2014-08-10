@@ -9,13 +9,14 @@
 </head>
 
 <body>
+<div class="page">
 <iframe class="marquee" src="./html/marquee.html" seamless="yes" ></iframe>
 <div class="banner"></div>
 
 <?php
 	include './html/nav.html';
 
-	print '<div class="content">';
+	print '<div class="content"><div id="content">';
 
 	$content = $_GET['content'];
 	$found = 0;
@@ -42,12 +43,14 @@
 		echo "<center>Error: page not found.</center>";
 	}
 	
-	print '</div>';
+	print '</div></div>';
 	include './html/social.html';
 ?>
 
 <footer>
 <iframe class="rights" src="./html/rights.html" seamless="yes"></iframe>
 </footer>
+</div>
 </body>
+<script id="link_handler" src="./html/link_handler.js"></script>
 </html>

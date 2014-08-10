@@ -36,6 +36,7 @@ nav ul {
 	margin: 0 auto;
 	width: 742px;
 	font-weight:bold;
+        z-index:10;
 }
 
 nav ul:after {
@@ -171,16 +172,16 @@ nav ul ul li a:hover {
 <div class="nav">
 <nav>
 <ul>
-<li><a href="./index.php?content=home">Home</a></li>
-<li><a href="./index.php?content=events">Events</a>
+<li><a id="home" href="#">Home</a></li>
+<li><a id="events" href="#">Events</a>
 	<ul>
-	<li><a href="./index.php?content=call">10/3 Rafael Cruz Dinner</a></li>
-	<li><a href="./index.php?content=dream">10/3 Rafael Cruz Business Lunch</a></li>
+	<li><a id="call" href="#">10/3 Rafael Cruz Dinner</a></li>
+	<li><a id="dream" href="#">10/3 Rafael Cruz Business Lunch</a></li>
 	</ul>
 </li>
-<li><a href="./index.php?content=issues">Our Issues</a></li>
-<li><a href="./index.php?content=people">Board/Staff</a></li>
-<li><a href="./index.php?content=contact">Contact Us</a></li>
+<li><a id="issues" href="#">Our Issues</a></li>
+<li><a id="people" href="#">Board/Staff</a></li>
+<li><a id="contact" href="#">Contact Us</a></li>
 <li><a href="./res/2012-election-impact.pdf" target="_blank">NMCFP Election Impact</a></li>
 <li><a class="donate" href="https://www.sagepayments.net/eftcart/forms/donate.asp?M_id=227158848654">Donate</a></li>
 </ul>
