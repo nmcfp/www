@@ -10,10 +10,10 @@
 
 <body>
 <div class="page">
-<iframe class="marquee" src="./html/marquee.html" seamless="yes" ></iframe>
-<div class="banner"></div>
 
 <?php
+        include './html/marquee.html';
+        print '<div class="banner"></div>';
 	include './html/nav.html';
 
 	print '<div class="content"><div id="content">';
@@ -24,6 +24,7 @@
 
 	# permanent fixtures
 	if ($content == "home") {include './html/home.html'; $found = 1;}
+        if ($content == "news") {include './html/news.html'; $found = 1;}
 	if ($content == "events") {include './html/events.html'; $found = 1;}
 	if ($content == "issues") {include './html/issues.html'; $found = 1;}
 	if ($content == "people") {include './html/people.html'; $found = 1;}

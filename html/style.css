@@ -33,11 +33,12 @@ header, section, footer, aside, nav, main, article, figure {
 .marquee {
 	display: block;
 	margin: 0 auto;
-	height: 50px;
+	height: 42px;
 	border: 1px solid #737373;
 	background: #CDCCCC;
 	line-height: 250%;
-	margin-bottom: 10px;
+	padding-top: 8px;
+        margin-bottom: 10px;
 	width: 802px;
 	-webkit-border-top-right-radius: 3px;
 	-moz-border-radius-topright: 3px;
