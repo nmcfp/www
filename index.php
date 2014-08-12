@@ -31,14 +31,13 @@
 	if ($content == "contact") {include './html/contact.html'; $found = 1;}
 	
 	# events
-	if ($content == "call") {include './html/call.html'; $found = 1;}
-	if ($content == "host") {include './html/host.html'; $found = 1;}	
+	if ($content == "call") {include './html/call.html'; $found = 1;}	
 	if ($content == "dream") {include './html/dream.html'; $found = 1;}
 	
 	# misc temp
 	if ($content == "message") {include './html/message.html'; $found = 1;}
 	if ($content == "endorsement") {include './html/endorsement.html'; $found = 1;}
-	if ($content == "coming_soon") {include './html/coming_soon.html'; $found = 1;}
+	if ($content == "host") {include './html/host.html'; $found = 1;}
 	
 	if ($found == 0) {
 		echo "<center>Error: page not found.</center>";
@@ -46,11 +45,12 @@
 	
 	print '</div></div>';
 	include './html/social.html';
+        
+        print '<footer>';
+        include './html/rights.html';
+        print '</footer>';
 ?>
 
-<footer>
-<iframe class="rights" src="./html/rights.html" seamless="yes"></iframe>
-</footer>
 </div>
 </body>
 <script id="link_handler" src="./html/link_handler.js"></script>
