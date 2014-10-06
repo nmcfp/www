@@ -169,9 +169,9 @@ nav ul li a {
 	text-decoration: none;
 }
 
-nav ul li:hover {
-	background: #f5f5f5;
-	border-bottom: 2px solid #DDD;
+nav ul li:hover:not(.button) {
+    background: #f5f5f5;
+    border-bottom: 2px solid #DDD;
 }
 
 nav ul li:hover > ul {
@@ -273,6 +273,7 @@ nav ul ul li a:hover {
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #b23e35;
+        padding: 0px;
 }
 
 .red_button:hover {
@@ -327,7 +328,7 @@ nav ul ul li a:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a5cc52), color-stop(1, #b8e356) );
 	background:-moz-linear-gradient( center top, #a5cc52 5%, #b8e356 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5cc52', endColorstr='#b8e356');
-	background-color:#a5cc52;
+        background: #a5cc52;
 }
 
 .green_button:active {
@@ -445,11 +446,11 @@ nav ul ul li a:hover {
 }
 
 .zoom_picture img {
-	width: 96%;
-	height: 250px;
-	display: block;
-	margin: 0 auto;
-	-webkit-transform: scale(1,1);
+    width: 96%;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    -webkit-transform: scale(1,1);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 250ms;
     -moz-transform: scale(1,1);

@@ -29,6 +29,8 @@
 	if ($content == "issues") {include './html/issues.html'; $found = 1;}
 	if ($content == "people") {include './html/people.html'; $found = 1;}
 	if ($content == "contact") {include './html/contact.html'; $found = 1;}
+	if ($content == "coming_soon") {include './html/coming_soon.html'; $found = 1;}
+        
 	
 	# events
 	if ($content == "call") {include './html/call.html'; $found = 1;}	
@@ -38,7 +40,11 @@
 	if ($content == "message") {include './html/message.html'; $found = 1;}
 	if ($content == "endorsement") {include './html/endorsement.html'; $found = 1;}
 	if ($content == "host") {include './html/host.html'; $found = 1;}
-	
+        
+        # vote 2014
+        if ($content == "vote") {include './html/vote/vote.html'; $found = 1;}
+        if ($content == "call_to_vote") {include './html/vote/call_to_vote.html'; $found = 1;}
+                
 	if ($found == 0) {
 		echo "<center>Error: page not found.</center>";
 	}
