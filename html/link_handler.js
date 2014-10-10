@@ -35,38 +35,16 @@ $("body").on("click","#home",function(e) {
     xmlhttp.send();
 });
 
-$("body").on("click","#events",function(e) {
-    e.preventDefault();
-    
-    if (history.state.link !== "events") {
-        history.pushState({link:"events"},null,"index.php?content=events");
-    }
-    
-    xmlhttp.open("GET","./html/events.html",true);
-    xmlhttp.send();
-});
-
-$("body").on("click","#call",function(e) {
-    e.preventDefault();
-    
-    if (history.state.link !== "call") {
-        history.pushState({link:"call"},null,"index.php?content=call");
-    }
-    
-    xmlhttp.open("GET","./html/call.html",true);
-    xmlhttp.send();
-});
-
-$("body").on("click","#dream",function(e) {
-    e.preventDefault();
-
-    if (history.state.link !== "dream") {
-        history.pushState({link:"dream"},null,"index.php?content=dream");
-    }
-    
-    xmlhttp.open("GET","./html/dream.html",true);
-    xmlhttp.send();
-});
+//$("body").on("click","#events",function(e) {
+//    e.preventDefault();
+//    
+//    if (history.state.link !== "events") {
+//        history.pushState({link:"events"},null,"index.php?content=events");
+//    }
+//    
+//    xmlhttp.open("GET","./html/events.html",true);
+//    xmlhttp.send();
+//});
 
 $("body").on("click","#issues",function(e) {
     e.preventDefault();
@@ -110,28 +88,6 @@ $("body").on("click","#message",function(e) {
     xmlhttp.send();
 });
 
-$("body").on("click","#host",function(e) {
-    e.preventDefault();
-
-    if (history.state.link !== "host") {
-        history.pushState({link:"host"},null,"index.php?content=host");
-    }
-    
-    xmlhttp.open("GET","./html/host.html",true);
-    xmlhttp.send();
-});
-
-$("body").on("click","#endorsement",function(e) {
-    e.preventDefault();
-
-    if (history.state.link !== "endorsement") {
-        history.pushState({link:"endorsement"},null,"index.php?content=endorsement");
-    }
-    
-    xmlhttp.open("GET","./html/endorsement.html",true);
-    xmlhttp.send();
-});
-
 $("body").on("click","#news",function(e) {
     e.preventDefault();
 
@@ -140,6 +96,17 @@ $("body").on("click","#news",function(e) {
     }
     
     xmlhttp.open("GET","./html/news.html",true);
+    xmlhttp.send();
+});
+
+$("body").on("click","#donate",function(e) {
+    e.preventDefault();
+
+    if (history.state.link !== "donate") {
+        history.pushState({link:"donate"},null,"index.php?content=donate");
+    }
+    
+    xmlhttp.open("GET","./html/donate.html",true);
     xmlhttp.send();
 });
 
@@ -152,16 +119,6 @@ $("body").on("click","#coming_soon",function(e) {
     
     xmlhttp.open("GET","./html/coming_soon.html",true);
     xmlhttp.send();
-});
-
-$("body").on("click","#cruz_info",function(e) {
-    e.preventDefault();
-
-    if (history.state.link !== "cruz_info") {
-        history.pushState({link:"cruz_info"},null,"index.php?content=call#Cruz");
-    }
-    
-    $(document).scrollTop( $("#Cruz").offset().top );
 });
 
 // ---------------- VOTE 2014 PAGE ---------------- //

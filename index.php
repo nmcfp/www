@@ -25,21 +25,18 @@
 	# permanent fixtures
 	if ($content == "home") {include './html/home.html'; $found = 1;}
         if ($content == "news") {include './html/news.html'; $found = 1;}
-	if ($content == "events") {include './html/events.html'; $found = 1;}
+	#if ($content == "events") {include './html/events.html'; $found = 1;}
 	if ($content == "issues") {include './html/issues.html'; $found = 1;}
 	if ($content == "people") {include './html/people.html'; $found = 1;}
-	if ($content == "contact") {include './html/contact.html'; $found = 1;}
+	if ($content == "contact") {include './html/contact.html'; $found = 1;}	
+        if ($content == "donate") {include './html/donate.html'; $found = 1;}
 	if ($content == "coming_soon") {include './html/coming_soon.html'; $found = 1;}
-        
-	
+
 	# events
-	if ($content == "call") {include './html/call.html'; $found = 1;}	
-	if ($content == "dream") {include './html/dream.html'; $found = 1;}
+	#if ($content == "event_name") {include './html/event_html.html'; $found = 1;}
 	
 	# misc temp
 	if ($content == "message") {include './html/message.html'; $found = 1;}
-	if ($content == "endorsement") {include './html/endorsement.html'; $found = 1;}
-	if ($content == "host") {include './html/host.html'; $found = 1;}
         
         # vote 2014
         if ($content == "vote") {include './html/vote/vote.html'; $found = 1;}
